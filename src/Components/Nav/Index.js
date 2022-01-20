@@ -30,8 +30,8 @@ function Nav() {
               </a>
             </li>
             <li className="nav-item navbar-brand">
-              <a className="nav-link" href="./assets/html/calendar.html">
-                Calendar
+              <a className="nav-link" href="../../files/syllabus.pdf">
+                Syllabus
               </a>
             </li>
             <li className="nav-item navbar-brand">
