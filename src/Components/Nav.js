@@ -30,7 +30,7 @@ function Nav() {
               </a>
             </li>
             <li className="nav-item navbar-brand">
-              <a className="nav-link" href="../../files/syllabus.pdf">
+              <a className="nav-link" href="../../../public/syllabus.pdf">
                 Syllabus
               </a>
             </li>

@@ -1,11 +1,23 @@
-import "./App.css";
 import React from "react";
-import Home from "./Components/Home";
-import "bootstrap/dist/css/bootstrap.min.css";
-//double check if this import bootstrap line should be inserted here
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Nav from "./Components/Nav";
+import Home from "./Components/pages/Home";
+import About from "./Components/pages/About";
+import Contact from "./Components/pages/Contact";
 
 function App() {
-  return <Home />;
+  return (
+    <Router>
+      <div>
+        <Nav />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
+
+//nothing shows up on react page yet
