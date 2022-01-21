@@ -1,6 +1,8 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Nav() {
+  const location = useLocation();
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -21,13 +23,9 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item navbar-brand">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="./index.html"
-              >
+              <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item navbar-brand">
               <a className="nav-link" href="../../../public/syllabus.pdf">
@@ -35,50 +33,20 @@ function Nav() {
               </a>
             </li>
             <li className="nav-item navbar-brand">
-              <a className="nav-link" href="./assets/html/assignment.html">
-                Assignments
-              </a>
+              <Link
+                to="/about"
+                className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
+              >
+                About
+              </Link>
             </li>
             <li className="nav-item dropdown navbar-brand">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <Link
+                to="/contact"
+                className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
               >
-                Study Tools
-              </a>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a
-                    className="dropdown-item"
-                    href="./assets/html/library_of_congress.html"
-                  >
-                    Library of Congress
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="dropdown-item"
-                    href="./assets/html/youtube.html"
-                  >
-                    Recommended YouTube Channels
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="dropdown-item"
-                    href="./assets/html/day_planner.html"
-                  >
-                    Day Planner
-                  </a>
-                </li>
-              </ul>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
