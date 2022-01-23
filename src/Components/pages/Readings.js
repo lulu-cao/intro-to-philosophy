@@ -6,12 +6,9 @@ function Home() {
   return (
     <div>
       <Nav />
-      <div id="hero"></div>
-      <p>2022</p>
+      <p>Draft Paper</p>
     </div>
   );
 }
 
 export default Home;
-
-// read react-router-dom doc to fix photo, syllabus, hero image link

@@ -6,9 +6,9 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand mb-0 h1" href="#">
+        <Link to="/" className="navbar-brand mb-0 h1">
           Intro to Philosophy
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,21 +23,24 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item navbar-brand">
-              <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item navbar-brand">
-              <a className="nav-link" href="../../../public/syllabus.pdf">
+              <a className="nav-link" href="../../public/syllabus.pdf">
                 Syllabus
               </a>
             </li>
             <li className="nav-item navbar-brand">
               <Link
-                to="/about"
+                to="/instructor"
                 className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
               >
-                About
+                Instructor
+              </Link>
+            </li>
+            <li className="nav-item dropdown navbar-brand">
+              <Link
+                to="/readings"
+                className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+              >
+                Readings
               </Link>
             </li>
             <li className="nav-item dropdown navbar-brand">

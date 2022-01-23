@@ -1,23 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from "./Components/Nav";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/pages/Home";
-import About from "./Components/pages/About";
+import Instructor from "./Components/pages/Instructor";
+import Readings from "./Components/pages/Readings";
 import Contact from "./Components/pages/Contact";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Nav />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-      </div>
-    </Router>
+    // this is the new syntax for react-router-dom version 6
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/instructor" element={<Instructor />} />
+          <Route path="/readings" element={<Readings />} />
+          <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-//nothing shows up on react page yet
