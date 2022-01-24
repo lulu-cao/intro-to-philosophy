@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "../Nav.js";
+import Sunflower from "../images/sunflower.jpg";
 
 function About() {
   return (
@@ -7,7 +9,7 @@ function About() {
       <Nav />
       <div className="container">
         <h1>About Page</h1>
-        <img src="../images/sunflower.jpg" alt="Lulu under sunflower"></img>
+        <img src={Sunflower} alt="Lulu under sunflower" style={{width:"18rem", height:"25rem"}}></img>
         <p>
           Instructor: Lulu Cao<br/>
           M.A. Philosophy, Western Michigan University, 2021<br/>

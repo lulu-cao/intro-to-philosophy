@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Syllabus from "./pages/Syllabus.pdf";
 
 function Nav() {
   const location = useLocation();
@@ -23,14 +24,14 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item navbar-brand">
-              <a className="nav-link" href="../../public/syllabus.pdf">
+              <a className="nav-link" href={Syllabus}>
                 Syllabus
               </a>
             </li>
             <li className="nav-item navbar-brand">
               <Link
-                to="/instructor"
-                className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
+                to="/instructor" 
+                className={location.pathname === "/instructor" ? "nav-link active" : "nav-link"}
               >
                 Instructor
               </Link>
@@ -38,7 +39,7 @@ function Nav() {
             <li className="nav-item dropdown navbar-brand">
               <Link
                 to="/readings"
-                className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+                className={location.pathname === "/readings" ? "nav-link active" : "nav-link"}
               >
                 Readings
               </Link>

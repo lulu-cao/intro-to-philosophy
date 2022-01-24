@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "../Nav.js";
 import "./Home.css";
 
@@ -14,4 +15,4 @@ function Home() {
 
 export default Home;
 
-// read react-router-dom doc to fix photo, syllabus, hero image link
+// fix hero image link
