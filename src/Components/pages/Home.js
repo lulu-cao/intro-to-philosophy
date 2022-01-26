@@ -15,3 +15,5 @@ export default Home;
 
 //https://reactjs.org/docs/faq-styling.html#gatsby-focus-wrapper
 //check out react animations at the bottom of the page
+
+// follow react tutorial and use the starter codes
