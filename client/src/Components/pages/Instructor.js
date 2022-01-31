@@ -8,11 +8,19 @@ function About() {
     <div>
       <Nav />
       <div className="container">
-        <h1>About Page</h1>
-        <img src={Painting} alt="Lulu painting" style={{width:"40rem", height:"100%"}}></img>
+        <h1>Instructor</h1>
+        <img
+          src={Painting}
+          alt="Lulu painting"
+          style={{ width: "40rem", height: "100%" }}
+        ></img>
         <p>
-          Instructor: Lulu Cao<br/>
-          M.A. Philosophy, Western Michigan University, 2021<br/>
+          Lulu Cao
+          <br />
+          Public Philosopher
+          <br />
+          M.A. Philosophy, Western Michigan University, 2021
+          <br />
           Currently teaching at Metropolitan Community College, Kansas City, MO
         </p>
       </div>

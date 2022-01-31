@@ -30,8 +30,12 @@ function Nav() {
             </li>
             <li className="nav-item navbar-brand">
               <Link
-                to="/instructor" 
-                className={location.pathname === "/instructor" ? "nav-link active" : "nav-link"}
+                to="/instructor"
+                className={
+                  location.pathname === "/instructor"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
               >
                 Instructor
               </Link>
@@ -39,15 +43,35 @@ function Nav() {
             <li className="nav-item dropdown navbar-brand">
               <Link
                 to="/readings"
-                className={location.pathname === "/readings" ? "nav-link active" : "nav-link"}
+                className={
+                  location.pathname === "/readings"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
               >
                 Readings
               </Link>
             </li>
             <li className="nav-item dropdown navbar-brand">
               <Link
+                to="/handouts"
+                className={
+                  location.pathname === "/handouts"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                Handouts
+              </Link>
+            </li>
+            <li className="nav-item dropdown navbar-brand">
+              <Link
                 to="/contact"
-                className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+                className={
+                  location.pathname === "/contact"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
               >
                 Contact
               </Link>
