@@ -28,17 +28,13 @@ function Nav() {
                 Syllabus
               </a>
             </li>
-            <li className="nav-item navbar-brand">
-              <Link
-                to="/instructor"
-                className={
-                  location.pathname === "/instructor"
-                    ? "nav-link active"
-                    : "nav-link"
-                }
+            <li className="nav-item dropdown navbar-brand">
+              <a
+                href="https://mcckc-my.sharepoint.com/:o:/g/personal/lulu_cao_mcckc_edu/Ev17-yXgCZpAiCJJ1wv4NHMBW9FhQ3YN00nRLeH2PZL0ug"
+                className="nav-link"
               >
-                Instructor
-              </Link>
+                Handouts
+              </a>
             </li>
             <li className="nav-item dropdown navbar-brand">
               <Link
@@ -52,19 +48,19 @@ function Nav() {
                 Readings
               </Link>
             </li>
-            <li className="nav-item dropdown navbar-brand">
+            <li className="nav-item navbar-brand">
               <Link
-                to="/handouts"
+                to="/instructor"
                 className={
-                  location.pathname === "/handouts"
+                  location.pathname === "/instructor"
                     ? "nav-link active"
                     : "nav-link"
                 }
               >
-                Handouts
+                Instructor
               </Link>
             </li>
-            <li className="nav-item dropdown navbar-brand">
+            {/* <li className="nav-item dropdown navbar-brand">
               <Link
                 to="/contact"
                 className={
@@ -75,7 +71,7 @@ function Nav() {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

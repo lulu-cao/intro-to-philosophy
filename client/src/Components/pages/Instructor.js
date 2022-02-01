@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Nav from "../Nav.js";
 import Painting from "../images/painting.jpg";
 
-function About() {
+function Instructor() {
   return (
     <div>
       <Nav />
@@ -15,17 +15,21 @@ function About() {
           style={{ width: "40rem", height: "100%" }}
         ></img>
         <p>
-          Lulu Cao
+          <strong>Lulu Cao</strong>
           <br />
           Public Philosopher
           <br />
           M.A. Philosophy, Western Michigan University, 2021
           <br />
-          Currently teaching at Metropolitan Community College, Kansas City, MO
+          Adjunct Faculty, Metropolitan Community College, KCMO
+        </p>
+        <p>
+          Email:&nbsp;
+          <a href={`mailto:Lulu.Cao@mcckc.edu`}>Lulu.Cao@mcckc.edu</a>
         </p>
       </div>
     </div>
   );
 }
 
-export default About;
+export default Instructor;
