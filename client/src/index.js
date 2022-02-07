@@ -7,6 +7,7 @@ import Home from "./Components/pages/Home";
 import Instructor from "./Components/pages/Instructor";
 import Readings from "./Components/pages/Readings";
 import Contact from "./Components/pages/Contact";
+import Grade from "./Components/pages/Grade";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
@@ -19,6 +20,7 @@ render(
         <Route path="/instructor" element={<Instructor />} />
         <Route path="/readings" element={<Readings />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/grade" element={<Grade />} />
         <Route
           path="*"
           element={

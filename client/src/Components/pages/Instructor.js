@@ -1,21 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Nav from "../Nav.js";
 import Painting from "../images/painting.jpg";
+
+const styles = {
+  heading: {
+    marginTop: "1rem",
+    marginBottom: "1rem",
+  },
+  name: {
+    fontSize: 22,
+    fontWeight: 700,
+  },
+};
 
 function Instructor() {
   return (
     <div>
       <Nav />
       <div className="container">
-        <h1>Instructor</h1>
+        <h1 style={styles.heading}>Instructor</h1>
         <img
           src={Painting}
           alt="Lulu painting"
           style={{ width: "40rem", height: "100%" }}
         ></img>
         <p>
-          <strong>Lulu Cao</strong>
+          <span style={styles.name}>Lulu Cao</span>
           <br />
           Public Philosopher
           <br />

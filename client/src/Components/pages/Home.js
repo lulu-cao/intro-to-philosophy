@@ -22,3 +22,5 @@ export default Home;
 
 // follow react tutorial and use the starter codes
 //https://reactjs.org/tutorial/tutorial.html
+
+//finished 11

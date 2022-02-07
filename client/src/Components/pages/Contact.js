@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Nav from "../Nav.js";
+import "../styles/Contact.css";
 
 function Contact({ email, subject, body, ...props }) {
   return (
@@ -17,6 +17,10 @@ function Contact({ email, subject, body, ...props }) {
             Email
           </a>
         </p>
+        <p className="tag">Subject</p>
+        <p className="tag">Your Name</p>
+        <p className="tag">Contact Reason</p>
+        <p className="tag">Message</p>
       </div>
     </div>
   );
