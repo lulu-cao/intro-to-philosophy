@@ -9,13 +9,16 @@ import locke from "../files/readings-an-essay-concerning-human-understanding-loc
 import hume from "../files/readings-readings-an-essay-concerning-human-understanding-hume.pdf";
 import kant from "../files/readings-critique-of-pure-reason.pdf";
 import nagarjuna from "../files/readings-examination-of-the-senses.pdf";
+import Wrapper from "./Wrapper";
+import ReadingsCard from "./ReadingsCard";
+import readings from "../readings.json";
 
 function Home() {
   return (
     <div>
       <Nav />
       <div className="container">
-        <h1>Readings</h1>
+        <h1>Reading List</h1>
         <p>
           <strong>Description:</strong> First two modules' readings are provided
           below. Please purchase your textbook as soon as possible.
@@ -59,6 +62,38 @@ function Home() {
           <a href={nagarjuna}>“Examination of the Senses”</a> by Nāgārjuna
         </p>
       </div>
+      <Wrapper>
+        <ReadingsCard
+          title={readings[0].title}
+          image={readings[0].image}
+          author={readings[0].author}
+        />
+        <ReadingsCard
+          title={readings[1].title}
+          image={readings[1].image}
+          author={readings[1].author}
+        />{" "}
+        <ReadingsCard
+          title={readings[2].title}
+          image={readings[2].image}
+          author={readings[2].author}
+        />
+        <ReadingsCard
+          title={readings[3].title}
+          image={readings[3].image}
+          author={readings[3].author}
+        />{" "}
+        <ReadingsCard
+          title={readings[4].title}
+          image={readings[4].image}
+          author={readings[4].author}
+        />
+        <ReadingsCard
+          title={readings[5].title}
+          image={readings[5].image}
+          author={readings[5].author}
+        />
+      </Wrapper>
     </div>
   );
 }
