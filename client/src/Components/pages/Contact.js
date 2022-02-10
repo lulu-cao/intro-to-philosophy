@@ -1,6 +1,28 @@
 import React from "react";
 import Nav from "../Nav.js";
 import "../styles/Contact.css";
+import List from "./List/List.js";
+
+const faculty = [
+  {
+    id: 1,
+    name: "Brandon Gillette",
+    status: "Full-time Faculty",
+    campus: "MCC - Blue River",
+  },
+  {
+    id: 2,
+    name: "Douglas Fishel",
+    status: "Full-time Faculty",
+    campus: "MCC - Maple Woods",
+  },
+  {
+    id: 3,
+    name: "Michael Connelly",
+    status: "Full-time Faculty",
+    campus: "MCC - Longview",
+  },
+];
 
 function Contact({ email, subject, body, ...props }) {
   return (
@@ -21,6 +43,7 @@ function Contact({ email, subject, body, ...props }) {
         <p className="tag">Your Name</p>
         <p className="tag">Contact Reason</p>
         <p className="tag">Message</p>
+        <List faculties={faculty} />
       </div>
     </div>
   );

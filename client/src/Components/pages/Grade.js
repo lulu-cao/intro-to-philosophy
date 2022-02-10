@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../Nav.js";
-import GradeCalculator from "./GradeCalculator.js";
+import GradeCalculator from "./GradeCalculator/GradeCalculator.js";
 
 function Grade(props) {
   return (

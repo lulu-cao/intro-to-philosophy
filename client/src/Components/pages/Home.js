@@ -1,16 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Nav from "../Nav.js";
+import "../styles/Home.css";
 
 function Home() {
   return (
-    <div>
+    <div className="center">
       <Nav />
-      <img
-        src="https://afremov.com/images/product/image_2632.jpeg"
+      {/* <img
+        src="https://jooinn.com/images/peace-in-nature-1.jpg"
         alt="hero"
-        style={{ width: "100%", height: "75rem" }}
-      ></img>
+        style={{ width: "100%", height: "45rem" }}
+      ></img> */}
+      <div
+        style={{
+          backgroundImage: `url("https://jooinn.com/images/peace-in-nature-1.jpg")`,
+        }}
+        className="hero"
+      >
+        Hello Philosophy
+      </div>
     </div>
   );
 }
@@ -23,4 +31,4 @@ export default Home;
 // follow react tutorial and use the starter codes
 //https://reactjs.org/tutorial/tutorial.html
 
-//finished 11
+//finished 13
