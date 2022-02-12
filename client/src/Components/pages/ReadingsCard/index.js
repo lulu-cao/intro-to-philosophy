@@ -10,13 +10,19 @@ function ReadingsCard(props) {
       <div className="content">
         <ul>
           <li>
-            <strong>Title:</strong> {props.title}
+            <strong>Author:</strong> {props.author}
           </li>
           <li>
-            <strong>Author:</strong> {props.author}
+            <strong>Year:</strong> {props.year}
+          </li>
+          <li>
+            <strong>Title:</strong> {props.title}
           </li>
         </ul>
       </div>
+      <span onClick={() => props.removeReadings(props.id)} className="remove">
+        𝘅
+      </span>
     </div>
   );
 }

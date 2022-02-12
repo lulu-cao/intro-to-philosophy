@@ -15,6 +15,7 @@
   text-align: center;
   background: #6caddc;
 }
+
 .card > .img-container > img {
   width: 60%;
 }
@@ -30,5 +31,18 @@
 }
 
 .card > .content > ul > li {
-  margin-top: 8px;
+  margin-top: 3px;
+}
+
+.card > .remove {
+  color: darkgray;
+  font-size: 48px;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.card > .remove:hover {
+  color: black;
 }
