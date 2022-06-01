@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Home from "./Components/pages/Home";
 import Instructor from "./Components/pages/Instructor";
 import Readings from "./Components/pages/Readings";
+import Handouts from "./Components/pages/Handouts";
 import Contact from "./Components/pages/Contact";
 import Grade from "./Components/pages/Grade";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,6 +20,7 @@ render(
         <Route path="/" element={<Home />} />
         <Route path="/instructor" element={<Instructor />} />
         <Route path="/readings" element={<Readings />} />
+        <Route path="/handouts" element={<Handouts />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/grade" element={<Grade />} />
         <Route

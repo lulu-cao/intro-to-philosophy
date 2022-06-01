@@ -29,12 +29,16 @@ function Nav() {
               </a>
             </li>
             <li className="nav-item dropdown navbar-brand">
-              <a
-                href="https://mcckc-my.sharepoint.com/:o:/g/personal/lulu_cao_mcckc_edu/Ev17-yXgCZpAiCJJ1wv4NHMBW9FhQ3YN00nRLeH2PZL0ug"
-                className="nav-link"
+              <Link
+                to="/handouts"
+                className={
+                  location.pathname === "/handouts"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
               >
                 Handouts
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown navbar-brand">
               <Link
